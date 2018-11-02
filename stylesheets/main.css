@@ -1,0 +1,44 @@
+#headerjumbo {
+    margin-top: 20px;
+    background-size: cover;
+    max-width: 100%;
+    margin: 0;
+}
+
+* {
+    overflow-x: hidden;
+    font-family: "arial black";
+}
+
+h1, h2, h3, h4, h5 {
+    overflow: hidden;
+}
+
+#navlink {
+    color: white;
+}
+
+.leftcol {
+    width:40%;
+    float:left;
+    margin-right:25%;
+}
+
+.rightcol {
+    width:35%;
+}
+
+.custcont {
+    padding-top:50px;
+    padding-left:17%;
+    padding-right:15%;
+    padding-bottom:50px;
+}
+
+.centercol {
+    padding-top:60px;
+    padding-left:30%;
+    padding-right:30%;
+    padding-bottom:60px;
+    text-align:center;
+}
