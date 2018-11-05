@@ -14,9 +14,9 @@ h1, h2, h3, h4, h5 {
     overflow: hidden;
 }
 
-#navlink {
+/* #navlink {
     color: white;
-}
+} */
 
 .leftcol {
     width:40%;
@@ -41,4 +41,47 @@ h1, h2, h3, h4, h5 {
     padding-right:30%;
     padding-bottom:60px;
     text-align:center;
+}
+
+.centercolsmall {
+    padding-left:3%;
+    padding-right:3%;
+    text-align:center;
+}
+
+.imagescreensmall {
+    width:80%;
+}
+
+.imagescreenlarge {
+    width:50%;
+}
+
+.whyuscontainer {
+    color:white;
+    background-color:rgba(109, 130, 195, 0.8);
+}
+
+.missioncontainer {
+    padding-top:60px;
+    padding-bottom:60px;
+    color:white;
+    background-position:center;
+    background-size: cover;
+    max-width: 100%;
+}
+
+.meetteamcontainer {
+    color:white;
+    background-color:rgb(171, 129, 139);
+}
+
+.bannerimgcontainer {
+    padding:5%;
+    background-color:hsla(0, 0%, 100%, 0.39);
+    border-radius:30px;
+}
+
+#test {
+    margin:50%;
 }
