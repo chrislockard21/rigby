@@ -15,6 +15,8 @@
   <script>
     window.sr = ScrollReveal({reset: true, distance: '200px'});
   </script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
 </head>
 
 <!-- Creates a background image for the page -->
@@ -53,79 +55,77 @@
 	<div class="jumbotron test" id="headerjumbo" style="background-image: url('images/stock.jpg');">
     <div class="container bannerimgcontainer">
       <div class="row">
-        <div class="col-lg-12 text-center">
+        <div class="col-lg-12 text-center" style="padding:80px">
           <img src="images/rigby_logo_edit.png" id="image" class="revealBottom">
           <pre></pre>
-          <h1 style="color:white; text-shadow: 1px 1px black">Powering your growth since 1972</h1>
+          <h1 style="color:white; text-shadow: 1px 1px black; overflow-y:hidden;" class="revealBottom">Powering your growth since 1972</h1>
           <pre></pre>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Why us container -->
-  <div class="custcont whyuscontainer">
-    <div class="revealRight" id="onLeft">
-        <h1>Why Us?</h1>
-        <p>
-          Rigby Electric Supply Inc. has been supplying Eastern
-          North Carolina with quality electrical products since 1972.
-        </p>
-        <pre></pre>
+  <div class="container-fluid text-center whyuscontainer">
+    <div class="row addpad">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <h1>Why us?</h1>
+        <h5>
+            Rigby Electric Supply Inc. has been supplying Eastern
+            North Carolina with quality electrical products since 1972.
+        </h5>
+      </div>
+      <div class="col-md-3"></div>
     </div>
-    <div class="revealLeft" id="onRight">
-        <h3>About us</h3>
-        <p>Find out what makes us a leader in electrical distribution.</p>
-        <a href="about.html"><button type="button" class="btn btn-light">About Us</button></a>
-        <pre>
-        </pre>
-        <h3>Our Vendors</h3>
-        <p>View our vendors that supply us the quality products you need to complete your projects.</p>
-        <a href="our_vendors.html"><button type="button" class="btn btn-light">Our Vendors</button></a>
+    <div class="row addpad">
+      <div class="col-md-2"></div>
+      <div class="col-md-2 revealBottom1">
+          <h3>About us</h3>
+          <a href="about.html" id="aicon"><i class="material-icons " id="icons">supervisor_account</i></a>
+      </div>
+      <div class="col-md-2 revealBottom2">
+          <h3>Contact us</h3>
+          <a href="contact_us.html" id="aicon"><i class="material-icons md-18" id="icons">send</i></a>
+      </div>
+      <div class="col-md-2 revealBottom3">
+          <h3>Our products</h3>
+          <a href="products.html" id="aicon"><i class="material-icons md-18" id="icons">description</i></a>
+      </div>
+      <div class="col-md-2 revealBottom4">
+          <h3>Apply for Credit</h3>
+          <a href="credit_app.html" id="aicon"><i class="material-icons md-18" id="icons">monetization_on</i></a>
+      </div>
+      <div class="col-md-2"></div>
     </div>
   </div>
 
-  <!-- Mission container -->
-  <div class="missioncontainer" style="background-image: url('images/counter_edit_overlay.jpg');">
-    <div class="revealBottom" id='centercol'>
+  <div class="container-fluid backgroundcover text-center" style="background-image: url('images/counter_edit_overlay.jpg');">
+    <div class="row missioncont">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 revealBottom">
         <h1>Mission</h1>
         <pre></pre>
         <h4>
           At Rigby Electric, our customer base is electrical
           contractors of all sizes and industrial maintenance.
         </h4>
-        <pre></pre>
         <h4>
           We view our small business as an asset as it
           allows us to move quickly on key decisions that directly impact our customers and our business.
         </h4>
+      </div>
+      <div class="col-md-2"></div>
     </div>
   </div>
 
-  <!-- Meet the team container -->
-  <div class="custcont meetteamcontainer">
-    <div class="revealRight" id="onLeft">
-        <h1>Meet the Team</h1>
-        <p>
-          Meet the team that works daily to ensure that you get the correct parts with an exceptional experience.
-        </p>
-        <a href="meet_the_team.html"><button type="button" class="btn btn-light">Meet the Team</button></a>
-        <pre>
-        </pre>
-    </div>
-    <div class="revealLeft" id="onRight">
-        <h3>Credit Application</h3>
-        <p>Click here to apply for credit.<br />All forms should be filled out and submitted
-          to glockard@rigbyelectric.com.
-        </p>
-        <a href="credit_app.html"><button type="button" class="btn btn-light">Credit Application</button></a>
-        <pre>
-        </pre>
-        <h3>Products</h3>
-        <p>View our products.</p>
-        <a href="products.html"><button type="button" class="btn btn-light">Products</button></a>
-    </div>
-  </div>
+  
+  <!-- Click here to apply for credit. All forms should be filled out and submitted
+    to glockard@rigbyelectric.com. -->
+           
+            
+
+
+    
 
   <div style="text-align:center;background-color:rgb(197, 197, 198);color: rgb(110, 110, 110);">
     <h1 style="margin:3%;margin:3%;">Quality Products From Trusted Supliers</h1>
@@ -227,47 +227,10 @@
   sr.reveal('.revealBottom', {origin:'bottom',duration:2000,distance:'20px'});
   sr.reveal('.revealRight', {origin:'left',duration:2000});
   sr.reveal('.revealLeft', {origin:'right',duration:2000});
-
-  var w = window.outerWidth;
-  var centerCol = document.getElementById('centercol');
-  var image = document.getElementById('image');
-  
-  //Checks initial screen size
-  if (w > 800) {
-      document.querySelectorAll('#onLeft').forEach(function(e) {e.classList.add('leftcol')});
-      document.querySelectorAll('#onRight').forEach(function(e) {e.classList.add('rightcol')});
-      document.getElementById('centercol').classList.add('centercol');
-      image.classList.add('imagescreenlarge');
-    } else if (w < 800) {
-      document.querySelectorAll('#onLeft').forEach(function(e) {e.classList.remove('leftcol')});
-      document.querySelectorAll('#onRight').forEach(function(e) {e.classList.remove('rightcol')});
-      document.getElementById('centercol').classList.remove('centercol');
-      document.getElementById('centercol').classList.add('centercolsmall');
-      image.classList.remove('imagescreenlarge');
-      image.classList.add('imagescreensmall');
-    }
-
-  //This function will change the column layout if the screen is resized
-  function sizeFunc() {
-    var w = window.outerWidth;
-    var image = document.getElementById('image');
-
-    if (w < 800) {
-      document.querySelectorAll('#onLeft').forEach(function(e) {e.classList.remove('leftcol')});
-      document.querySelectorAll('#onRight').forEach(function(e) {e.classList.remove('rightcol')});
-      document.getElementById('centercol').classList.remove('centercol');
-      document.getElementById('centercol').classList.add('centercolsmall');
-      image.classList.remove('imagescreenlarge');
-      image.classList.add('imagescreensmall');
-    } else if (w > 800) {
-        document.querySelectorAll('#onLeft').forEach(function(e) {e.classList.add('leftcol')});
-        document.querySelectorAll('#onRight').forEach(function(e) {e.classList.add('rightcol')});
-        document.getElementById('centercol').classList.add('centercol');
-        document.getElementById('centercol').classList.remove('centercolsmall');
-        image.classList.remove('imagescreensmall');
-        image.classList.add('imagescreenlarge');
-    }
-  }
+  sr.reveal('.revealBottom1', {origin:'bottom',duration:500,distance:'20px'})
+  sr.reveal('.revealBottom2', {origin:'bottom',duration:1000,distance:'20px'})
+  sr.reveal('.revealBottom3', {origin:'bottom',duration:1500,distance:'20px'})
+  sr.reveal('.revealBottom4', {origin:'bottom',duration:2000,distance:'20px'})
 
 </script>
 </html>

@@ -12,20 +12,7 @@
 
 h1, h2, h3, h4, h5 {
     overflow: hidden;
-}
-
-/* #navlink {
-    color: white;
-} */
-
-.leftcol {
-    width:40%;
-    float:left;
-    margin-right:25%;
-}
-
-.rightcol {
-    width:35%;
+    padding: 10px;
 }
 
 .custcont {
@@ -33,20 +20,6 @@ h1, h2, h3, h4, h5 {
     padding-left:17%;
     padding-right:15%;
     padding-bottom:50px;
-}
-
-.centercol {
-    padding-top:60px;
-    padding-left:30%;
-    padding-right:30%;
-    padding-bottom:60px;
-    text-align:center;
-}
-
-.centercolsmall {
-    padding-left:3%;
-    padding-right:3%;
-    text-align:center;
 }
 
 .imagescreensmall {
@@ -62,13 +35,21 @@ h1, h2, h3, h4, h5 {
     background-color:rgba(109, 130, 195, 0.8);
 }
 
-.missioncontainer {
+.addpad {
     padding-top:60px;
     padding-bottom:60px;
-    color:white;
+}
+
+.backgroundcover {
     background-position:center;
     background-size: cover;
     max-width: 100%;
+}
+
+.missioncont {
+    padding-top:100px;
+    padding-bottom:100px;
+    color:white;
 }
 
 .meetteamcontainer {
@@ -84,4 +65,19 @@ h1, h2, h3, h4, h5 {
 
 #test {
     margin:50%;
+}
+
+#icons {
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    font-size: 120px;
+}
+
+#aicon {
+    color:white;
+}
+
+#icons:hover {
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
 }
